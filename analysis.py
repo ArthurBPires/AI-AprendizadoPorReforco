@@ -20,55 +20,56 @@
 # value iteration.
 
 def question2():
-    answerDiscount = 0.9
-    answerNoise = 0
+    answerDiscount = 0.5
+    answerNoise = 0.5
     return answerDiscount, answerNoise
 
 def question3a():
     # get the close reward, risking the cliff
-    answerDiscount = 0.25
-    answerNoise = 0
-    answerLivingReward = 0
+    answerDiscount = 0.8
+    answerNoise = 0.3
+    answerLivingReward = 0.65
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question3b():
     # get the close reward, avoiding the cliff
-    answerDiscount = 0.25
-    answerNoise = 0.2
-    answerLivingReward = 0
+    answerDiscount = 0.75
+    answerNoise = 0.25
+    answerLivingReward = 0.5
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question3c():
     # Prefer the distant exit (+10), risking the cliff (-10)
-    answerDiscount = 0.75
-    answerNoise = 0
-    answerLivingReward = 0
+    answerDiscount = 0.1
+    answerNoise = 0.2
+    answerLivingReward = 0.3
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question3d():
     # Prefer the distant exit (+10), avoiding the cliff (-10)
-    answerDiscount = 0.9
-    answerNoise = 0.1
-    answerLivingReward = 0.5
+    answerDiscount = 0.6
+    answerNoise = 0.7
+    answerLivingReward = 0.95
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question3e():
     # Avoid both exits and the cliff (so an episode should never terminate)
-    answerDiscount = 0.98
-    answerNoise = 0.1
-    answerLivingReward = 0.5
+    answerDiscount = 0.3
+    answerNoise = 0.65
+    answerLivingReward = 0.45
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question6():
     answerEpsilon = None
     answerLearningRate = None
-    return 'NOT POSSIBLE'
     # If not possible, return 'NOT POSSIBLE'
+
+    return 'NOT POSSIBLE'
 
 if __name__ == '__main__':
     print('Answers to analysis questions:')
